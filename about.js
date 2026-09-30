@@ -1,10 +1,12 @@
 (function(){
   var root = document.documentElement;
   var btn = document.getElementById('themeToggle');
-  function apply(theme){
-    root.setAttribute('data-theme', theme);
-    btn.textContent = theme === 'light' ? '☀️' : '🌙';
-  }
+  function apply(theme) {
+  root.setAttribute('data-theme', theme);
+  btn.querySelector('img').src = theme === 'light'
+    ? './img/brightness.png'
+    : './img/moon.png';
+}
   var saved = null;
   try { saved = localStorage.getItem('hashim-theme'); } catch(e) {}
   var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
