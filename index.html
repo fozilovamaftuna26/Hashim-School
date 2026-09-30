@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,76 +19,82 @@
     HASHIM SCHOOL
   </div>
   <nav>
-    <a href="#kurslar">Kurslar</a>
-    <a href="#bitiruvchilar">Bitiruvchilar</a>
-    <a href="#biz-haqimizda">Biz haqimizda</a>
-    <a href="#faq">FAQ</a>
+    <a href="#kurslar" data-i18n="nav.courses">Kurslar</a>
+    <a href="#bitiruvchilar" data-i18n="nav.grads">Bitiruvchilar</a>
+    <a href="#biz-haqimizda" data-i18n="nav.about">Biz haqimizda</a>
+    <a href="#faq" data-i18n="nav.faq">FAQ</a>
   </nav>
   <div class="header-right">
-    <div class="phone"><span>Qo'ng'iroq qiling</span>+998 90 230 13 08</div>
+    <div class="phone"><span data-i18n="phone.label">Qo'ng'iroq qiling</span>+998 90 230 13 08</div>
     <button class="theme-toggle" id="themeToggle" aria-label="Rejimni almashtirish"><img src="./img/moon.png" alt="oy" width="20px" height="20px"></button>
-    <div class="cta-btn">Ro'yxatdan o'tish</div>
+    <div class="lang-switch" id="langSwitch">
+      <button data-lang="uz">UZ</button>
+      <button data-lang="ru">RU</button>
+      <button data-lang="en">EN</button>
+    </div>
+   
   </div>
 </header>
 
 <div class="hero">
- <h1>Robototexnika bilan <span class="num">kelajak</span> sari</h1>
-  <p>Hashim School — 7 yoshdan 70 yoshgacha bo‘lgan barcha yoshdagilar uchun zamonaviy bilim va yangi imkoniyatlar maskani. Zamonaviy jihozlangan xonalar, tajribali va zamonaviy ustozlar hamda maxsus robototexnika ustaxonasi o‘quvchilarga robototexnika va texnologiyalarni chuqur o‘rganish, amaliy loyihalar yaratish va o‘z qobiliyatlarini rivojlantirishga yordam beradi</p>
+ <h1 data-i18n-html="hero.title">Robototexnika bilan <span class="num">kelajak</span> sari</h1>
+  <p data-i18n="hero.desc">Hashim School — 7 yoshdan 70 yoshgacha bo‘lgan barcha yoshdagilar uchun zamonaviy bilim va yangi imkoniyatlar maskani. Zamonaviy jihozlangan xonalar, tajribali va zamonaviy ustozlar hamda maxsus robototexnika ustaxonasi o‘quvchilarga robototexnika va texnologiyalarni chuqur o‘rganish, amaliy loyihalar yaratish va o‘z qobiliyatlarini rivojlantirishga yordam beradi</p>
   <div class="hero-ctas">
     <div class="btn-primary">
-      <a href="">Bepul konsultatsiya olish</a>
+      <a href="" data-i18n="hero.ctaPrimary">Bepul konsultatsiya olish</a>
     </div>
     <div class="btn-secondary">
-      <a href="#kurslar">Kurslarni ko'rish</a>
+      <a href="#kurslar" data-i18n="hero.ctaSecondary">Kurslarni ko'rish</a>
     </div>
   </div>
 
   <div class="stats">
-    <div class="stat"><b>300+</b><span>Muvaffaqiyatli o'quvchi</span></div>
-    <div class="stat"><b>10 ta</b><span>Yo'nalishlar</span></div>
-    <div class="stat"><b>10+</b><span>Ustozlar</span></div>
-    <div class="stat"><b>95%</b><span>Bitiruv ko'rsatkichi</span></div>
+    <div class="stat"><b>300+</b><span data-i18n="stats.students">Muvaffaqiyatli o'quvchi</span></div>
+    <div class="stat"><b>10 ta</b><span data-i18n="stats.tracks">Yo'nalishlar</span></div>
+    <div class="stat"><b>10+</b><span data-i18n="stats.teachers">Ustozlar</span></div>
+    <div class="stat"><b>95%</b><span data-i18n="stats.rate">Bitiruv ko'rsatkichi</span></div>
   </div>
 </div>
 
 <section class="block" id="kurslar">
-  <h2>Kurslarimiz</h2>
- 
+  <h2 data-i18n="courses.title">Kurslarimiz</h2>
+
   <div class="courses">
     <div class="course"><div class="tag">
        <img src="./img/Kurslar/92cef0c9-7a04-49ba-a8fd-4a8127399022.png" alt="" srcset=" " width="200px" height="200px">
-    </div><h3>Kompyuter savodxonligi</h3><p>Kompyuterdan foydalanish, dasturlarni ishlatish va internetdan to‘g‘ri foydalanishni o‘rganing.
+    </div><h3 data-i18n="course.compLit.h">Kompyuter savodxonligi</h3><p data-i18n="course.compLit.p">Kompyuterdan foydalanish, dasturlarni ishlatish va internetdan to‘g‘ri foydalanishni o‘rganing.
        </p>
       </div>
     <div class="course"><div class="tag">
       <img src="./img/Kurslar/ChatGPT Image 25 сент. 2026 г., 13_13_04.png" alt="" srcset=" " width="200px" height="200px">
-      </div><h3>Python</h3><p>Dasturlashni o‘rganing, kod yozing va o‘zingizning oddiy dasturlaringizni yarating </p>
+      </div><h3 data-i18n="course.python.h">Python</h3><p data-i18n="course.python.p">Dasturlashni o‘rganing, kod yozing va o‘zingizning oddiy dasturlaringizni yarating </p>
     </div>
     <div class="course"><div class="tag">
       <img src="./img/Kurslar/ChatGPT Image 30 сент. 2026 г., 10_08_50.png" alt="" srcset=" " width="200px" height="200px">
-    </div><h3>Loyihalash</h3><p>G‘oyalarni haqiqiy loyihalarga aylantirishni o‘rgatuvchi amaliy kurs. </p></div>
+    </div><h3 data-i18n="course.design.h">Loyihalash</h3><p data-i18n="course.design.p">G‘oyalarni haqiqiy loyihalarga aylantirishni o‘rgatuvchi amaliy kurs. </p></div>
     <div class="course"><div class="tag">
       <img src="./img/Kurslar/ChatGPT Image 25 сент. 2026 г., 13_24_35.png" alt="" srcset=" " width="200px" height="200px">
 
-    </div><h3>IoT (CyberPi)</h3><p>CyberPi yordamida internetga ulangan aqlli qurilmalar va real loyihalar yaratishni o‘rganing.</p></div>
+    </div><h3 data-i18n="course.iot.h">IoT (CyberPi)</h3><p data-i18n="course.iot.p">CyberPi yordamida internetga ulangan aqlli qurilmalar va real loyihalar yaratishni o‘rganing.</p></div>
     <div class="course"><div class="tag">
       <img src="./img/Kurslar/ChatGPT Image 25 сент. 2026 г., 13_24_59.png" alt="" srcset=" " width="200px" height="200px">
-    </div><h3>Arduino</h3><p>Arduino yordamida elektron qurilmalar yaratish va dasturlashni o‘rganing.</p></div>
+    </div><h3 data-i18n="course.arduino.h">Arduino</h3><p data-i18n="course.arduino.p">Arduino yordamida elektron qurilmalar yaratish va dasturlashni o‘rganing.</p></div>
     <div class="course"><div class="tag">
       <img src="./img/Kurslar/d043f097-4809-4ca9-a30c-28d4199978f2.png" alt="" srcset=" " width="200px" height="200px">
-    </div><h3>WeDo</h3><p> Yosh bolalarga LEGO orqali robot yasash va dasturlashni o‘rgatadi.</p></div>
+    </div><h3 data-i18n="course.wedo.h">WeDo</h3><p data-i18n="course.wedo.p"> Yosh bolalarga LEGO orqali robot yasash va dasturlashni o‘rgatadi.</p></div>
      <div class="course"><div class="tag">
       <img src="./img/Kurslar/d7e1778b-bc29-40d7-94d6-ec15c69d6217.png" alt="" srcset=" " width="200px" height="200px">
-    </div><h3>mBot 2</h3><p>mBot2 roboti orqali robototexnika va dasturlashni o‘rganing.</p></div>
+    </div><h3 data-i18n="course.mbot.h">mBot 2</h3><p data-i18n="course.mbot.p">mBot2 roboti orqali robototexnika va dasturlashni o‘rganing.</p></div>
      <div class="course"><div class="tag">
       <img src="./img/Kurslar/f955460e-9dda-4b3a-90d4-bc50e17c2cb0.png" alt="" srcset=" " width="200px" height="200px">
-    </div><h3>Spike</h3><p>LEGO konstruksiyalari, robototexnika va dasturlashni birlashtirgan ijodiy kurs.</p></div>
+    </div><h3 data-i18n="course.spike.h">Spike</h3><p data-i18n="course.spike.p">LEGO konstruksiyalari, robototexnika va dasturlashni birlashtirgan ijodiy kurs.</p></div>
      <div class="course"><div class="tag">
       <img src="./img/Kurslar/ChatGPT Image 30 сент. 2026 г., 10_57_49.png" alt="" srcset=" " width="200px" height="200px">
-    </div><h3>3D loyihalash</h3><p>3D modellar yaratish va ularni real buyumlarga aylantirishni o‘rganing.</p></div>
+    </div><h3 data-i18n="course.d3.h">3D loyihalash</h3><p data-i18n="course.d3.p">3D modellar yaratish va ularni real buyumlarga aylantirishni o‘rganing.</p></div>
   </div>
 </section>
 
+<script src="./i18n.js"></script>
 <script src="./about.js"></script>
 </body>
 </html>
