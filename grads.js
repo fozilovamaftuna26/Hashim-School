@@ -1,7 +1,7 @@
 
 (function () {
   // Rasmlar shu papkada: ./img/Bitiruvchilar/1.jpg ... 100.jpg
-  var TOTAL = 100;
+  var TOTAL = 126;
   var FOLDER = './img/Bitiruvchilar/';
   var EXT = '.jpg';
  
